@@ -1,0 +1,3 @@
+[submodule "external/overleaf"]
+	path = external/overleaf
+	url = https://github.com/overleaf/toolkit.git
