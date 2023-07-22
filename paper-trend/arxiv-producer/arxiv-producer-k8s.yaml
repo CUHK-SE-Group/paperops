@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arxiv-producer
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: arxiv-producer
+  template:
+    metadata:
+      labels:
+        app: arxiv-producer
+    spec:
+      containers:
+      - name: arxiv-producer
+        image: lincyaw/arxiv-producer:latest

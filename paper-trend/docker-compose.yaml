@@ -1,0 +1,6 @@
+version: '3'
+services:
+  arxiv-producer:
+    build:
+      context: arxiv-producer
+      dockerfile: Dockerfile
